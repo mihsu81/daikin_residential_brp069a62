@@ -215,7 +215,7 @@ class DaikinResidentialDevice:
                 "Type of value ("
                 + str(type(value))
                 + ") is not the expected type ("
-                + str(type(descr["value"]))
+                + str(type(descr["stepValue"]))
                 + ")"
             )
 
