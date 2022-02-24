@@ -115,7 +115,7 @@ class DaikinDHWTank(WaterHeaterEntity):
     @property
     def current_temperature(self):
         """Return the current temperature."""
-        return self._device.dhw_temperature
+        return self._device.dhw_target_temperature
 
     @property
     def target_temperature(self):
