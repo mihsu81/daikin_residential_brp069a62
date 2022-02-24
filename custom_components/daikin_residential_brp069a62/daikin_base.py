@@ -265,7 +265,7 @@ class Appliance(DaikinResidentialDevice):  # pylint: disable=too-many-public-met
         operationMode = self.getValue(ATTR_OPERATION_MODE)
         if operationMode not in [ATTR_HVAC_MODE_AUTO, ATTR_HVAC_MODE_COOL, ATTR_HVAC_MODE_HEAT]:
             return None
-        return await self.setValue(ATTR_TARGET_TEMPERATURE, int(value))
+        return await self.setValue(ATTR_TARGET_TEMPERATURE, float(value))
 
     async def async_set_hvac_mode(self, hvac_mode):
         """Set new HVAC mode."""
