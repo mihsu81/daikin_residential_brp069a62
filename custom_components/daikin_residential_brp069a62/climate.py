@@ -124,7 +124,7 @@ class DaikinClimate(ClimateEntity):
     @property
     def current_temperature(self):
         """Return the current temperature."""
-        return self._device.leavingWater_temperature
+        return self._device.inside_temperature
 
     @property
     def target_temperature(self):
