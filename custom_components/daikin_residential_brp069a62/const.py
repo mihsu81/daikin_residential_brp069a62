@@ -1,4 +1,4 @@
-"""Constants for Daikin Residential Controller with BRP069A62."""
+"""Constants for Daikin Residential Controller with DRGATEWAYAA & DOTROOMTHEAA."""
 
 from homeassistant.const import (
     CONF_DEVICE_CLASS,
@@ -54,9 +54,9 @@ ATTR_DHW_STATE_HEAT_PUMP = "on"
 ATTR_DHW_STATE_PERFOMANCE = "powerfulMode"
 
 
-ATTR_HVAC_MODE_COOL = "cooling"
-ATTR_HVAC_MODE_HEAT = "heating"
-ATTR_HVAC_MODE_AUTO = "auto"
+ATTR_HVAC_MODE_COOL = "heatingDay"
+ATTR_HVAC_MODE_HEAT = "heatingDay"
+ATTR_HVAC_MODE_AUTO = "heatingNight"
 ATTR_HVAC_MODE_OFF = "off"
 ATTR_HVAC_MODE_SET = "hvac_mode"
 
